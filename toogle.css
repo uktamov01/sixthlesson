@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.toogle{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background: #eee;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 2px;
+    transition: .3s;
+    cursor: pointer;
+}
+#check:checked + .toogle{
+    background: #01d621;
+}
+#check{
+    display: none;
+}
+.circle{
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    
+}
+#check:checked + .toogle .circle{
+    transform:translateX(40px);
+}
